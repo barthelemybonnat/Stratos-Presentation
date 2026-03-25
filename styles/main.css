@@ -1755,9 +1755,18 @@ footer a:hover {
     padding: 80px 0 0;
   }
 
+  .pillars-track-wrapper {
+    overflow-x: hidden;
+  }
+
+  .pillars-track {
+    flex-direction: column;
+  }
+
   .pillar {
-    min-width: 300px;
-    padding: 40px 28px;
+    min-width: 100%;
+    width: 100%;
+    padding: 40px 24px;
   }
 
   .pillar-num {
