@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stratos Hospitality</title>
+  <meta name="description" content="Stratos positionne les établissements d'exception dans les recommandations de l'intelligence artificielle.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav>
+    <img src="assets/images/Logo-Stratos-Blanc.png" alt="Stratos" class="logo">
+    <a href="mailto:admin@stratoshospitality.com" class="nav-link">Nous contacter</a>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       Modifier les textes dans .hero-line et .hero-sub p
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-line">
+      <span class="word">Ancrez</span>
+      <span class="word">votre</span>
+      <span class="word">maison</span>
+      <br>
+      <span class="word">dans</span>
+      <span class="word">les</span>
+      <span class="word">réponses</span>
+      <span class="word">des</span>
+      <br>
+      <span class="word gold">intelligences</span>
+      <span class="word gold">artificielles.</span>
+    </div>
+    <div class="hero-sub">
+      <p>Vos futurs clients ne cherchent plus. Ils demandent. Et l'IA leur répond. Stratos fait en sorte que la réponse, ce soit votre établissement.</p>
+      <a href="#approche">Découvrir notre approche</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE — bande défilante de mots-clés
+       Dupliquer les spans pour modifier le contenu
+       ============================================================ -->
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span><em>SEO</em> — Référencement naturel</span>
+      <span><em>GEO</em> — Visibilité IA générative</span>
+      <span><em>E-Réputation</em> — Avis &amp; confiance</span>
+      <span><em>Multilingue</em> — FR EN ES AR JP</span>
+      <span><em>Premium</em> — Hospitalité d'exception</span>
+      <span><em>Sur-mesure</em> — Chaque maison est unique</span>
+      <!-- Doublon pour l'animation infinie -->
+      <span><em>SEO</em> — Référencement naturel</span>
+      <span><em>GEO</em> — Visibilité IA générative</span>
+      <span><em>E-Réputation</em> — Avis &amp; confiance</span>
+      <span><em>Multilingue</em> — FR EN ES AR JP</span>
+      <span><em>Premium</em> — Hospitalité d'exception</span>
+      <span><em>Sur-mesure</em> — Chaque maison est unique</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCROLL REVEAL — texte qui s'illumine au scroll
+       Chaque .rw est un mot ou groupe de mots révélé individuellement
+       ============================================================ -->
+  <section class="scroll-reveal-section">
+    <p class="reveal-text">
+      <span class="rw">L'industrie</span>
+      <span class="rw">de</span>
+      <span class="rw">l'hospitalité</span>
+      <span class="rw">traverse</span>
+      <span class="rw">une</span>
+      <span class="rw gold-target">mutation</span>
+      <span class="rw">sans</span>
+      <span class="rw">précédent.</span>
+      <br>
+      <span class="rw">De</span>
+      <span class="rw">la</span>
+      <span class="rw">recherche</span>
+      <span class="rw">par</span>
+      <span class="rw">mots-clés</span>
+      <span class="rw">à</span>
+      <span class="rw gold-target">l'économie de la réponse générative.</span>
+      <br>
+      <span class="rw">102 millions de touristes. 45% utilisent l'IA pour</span>
+      <span class="rw gold-target">choisir.</span>
+      <br>
+      <span class="rw">Votre établissement doit être</span>
+      <span class="rw gold-target">la réponse.</span>
+    </p>
+  </section>
+
+  <!-- ============================================================
+       SPLIT — GEO + simulation IA
+       Section en deux colonnes : pitch à gauche, démo à droite
+       ============================================================ -->
+  <section class="split" id="approche">
+    <div class="split-left">
+      <div class="split-label">Generative Engine Optimization</div>
+      <h2 class="split-title">Quand l'IA recommande, <em>êtes-vous la réponse&nbsp;?</em></h2>
+      <div class="split-label split-label--sub">Notre méthode</div>
+      <p class="split-body">Nous analysons comment ChatGPT, Gemini, Perplexity et Claude construisent leurs recommandations. Puis nous optimisons votre présence pour que votre maison soit citée, recommandée, et choisie.</p>
+      <p class="split-body">Nous évitons les approches trop insistantes ainsi que les solutions toutes faites. Chaque stratégie est pensée sur mesure, dans le respect de l'identité de votre établissement.</p>
+    </div>
+    <div class="split-right">
+      <!-- Simulation IA — contenu géré dans scripts/main.js -->
+      <div class="sim">
+        <div class="sim-label">Simulation IA en direct</div>
+        <div class="sim-q" id="simQ"></div>
+        <div class="sim-a" id="simA"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PILLARS — 4 piliers, scroll horizontal drag
+       Modifier les titres, tags et listes dans chaque .pillar
+       ============================================================ -->
+  <section class="pillars-section">
+    <div class="pillars-header">
+      <h2>Notre méthode en <em>4 dimensions.</em><br>Un seul objectif&nbsp;: votre visibilité.</h2>
+      <div class="pillars-intro">
+        <p class="pi-line">
+          <span class="rw">Vos futurs clients</span>
+          <span class="rw">ne cherchent plus.</span>
+        </p>
+        <p class="pi-line">
+          <span class="rw">Ils interrogent les</span>
+          <span class="rw">intelligences artificielles.</span>
+        </p>
+        <p class="pi-line">
+          <span class="rw gold-target">Nous analysons</span>
+          <span class="rw">les</span>
+          <span class="rw">mécanismes de construction des recommandations.</span>
+        </p>
+        <p class="pi-line">
+          <span class="rw">Puis nous optimisons votre présence pour que</span>
+          <span class="rw">ChatGPT, Gemini, Perplexity et Claude</span>
+          <span class="rw gold-target">citent naturellement votre établissement.</span>
+        </p>
+      </div>
+    </div>
+    <div class="pillars-track-wrapper">
+      <div class="pillars-track" id="pillarsTrack">
+
+        <div class="pillar">
+          <div class="pillar-num">01</div>
+          <h3 class="pillar-name">Audit</h3>
+          <div class="pillar-tag">Intelligence</div>
+          <ul>
+            <li>Audit complet de visibilité (SEO, local, IA)</li>
+            <li>Ce qui manque aujourd'hui pour être recommandé</li>
+            <li>Benchmark concurrentiel multi-plateformes</li>
+            <li>Analyse de la présence IA</li>
+            <li>Plan d'action priorisé 90 jours</li>
+          </ul>
+          <div class="pillar-bottom">Comprendre votre position réelle</div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-num">02</div>
+          <h3 class="pillar-name">Visibilité</h3>
+          <div class="pillar-tag">Autorité</div>
+          <ul>
+            <li>Optimisation GEO pour les moteurs IA</li>
+            <li>Contenu structuré et exploitable par les IA</li>
+            <li>Landing pages par intention de recherche</li>
+            <li>Informations claires et structurées pour être mieux comprises en ligne</li>
+            <li>Stratégie éditoriale niche premium</li>
+          </ul>
+          <div class="pillar-bottom">Devenir la réponse de l'IA</div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-num">03</div>
+          <h3 class="pillar-name">Réputation</h3>
+          <div class="pillar-tag">Confiance</div>
+          <ul>
+            <li>Outil de collecte d'avis intelligent</li>
+            <li>Les avis négatifs sont traités en privé, les positifs amplifiés sur Google</li>
+            <li>Réponse IA à l'image de votre établissement</li>
+            <li>Dashboard multi-plateformes temps réel</li>
+            <li>Stratégie conforme aux codes du luxe</li>
+            <li>1–3 ★ — avis traités et contextualisés en privé</li>
+            <li>4–5 ★ — amplifiés sur Google et plateformes cibles</li>
+          </ul>
+          <div class="pillar-bottom">Protéger et amplifier votre réputation</div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-num">04</div>
+          <h3 class="pillar-name">Pilotage</h3>
+          <div class="pillar-tag">Évolution</div>
+          <ul>
+            <li>Reporting mensuel clair et actionnable</li>
+            <li>Suivi des positions SEO et présence IA</li>
+            <li>Ajustements stratégiques continus</li>
+            <li>Point mensuel avec votre équipe</li>
+            <li>Veille technologique et adaptation</li>
+          </ul>
+          <div class="pillar-bottom">Un accompagnement dans la durée</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COUNTERS — métriques animées au scroll
+       Modifier data-target pour changer les valeurs
+       Ajouter data-suffix="+" pour afficher un suffixe
+       ============================================================ -->
+  <div class="counters">
+    <div class="counter">
+      <div class="counter-val" data-target="3">0</div>
+      <div class="counter-label">Pays</div>
+    </div>
+    <div class="counter">
+      <div class="counter-val" data-target="11">0</div>
+      <div class="counter-label">Établissements</div>
+    </div>
+    <div class="counter">
+      <div class="counter-val" data-target="100" data-suffix="%">0</div>
+      <div class="counter-label">Premium</div>
+    </div>
+    <div class="counter">
+      <div class="counter-val" data-target="70" data-suffix="%">0</div>
+      <div class="counter-label">Outils développés en interne</div>
+    </div>
+    <div class="counter">
+      <div class="counter-val" data-target="5">0</div>
+      <div class="counter-label">Langues couvertes</div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TÉMOIGNAGES — preuves sociales
+       Remplacer les placeholders par les vrais témoignages
+       ============================================================ -->
+  <section class="testimonials">
+    <div class="testimonials-header">
+      <div class="split-label">Ce qu'ils disent</div>
+      <h2 class="testimonials-title">Maisons accompagnées</h2>
+    </div>
+    <div class="testimonials-list">
+
+      <div class="testimonial">
+        <p class="testimonial-text">En trois mois, notre établissement est cité en premier résultat sur ChatGPT pour les recherches gastronomiques de notre quartier. C'est une visibilité que nous n'aurions jamais imaginé obtenir si rapidement.</p>
+        <div class="testimonial-attribution">
+          <span class="testimonial-author">Directeur général</span>
+          <span class="testimonial-sep">·</span>
+          <span class="testimonial-role">Restaurant gastronomique, Paris 8e</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <p class="testimonial-text">L'approche de Stratos est radicalement différente. Pas de promesses creuses, pas de livrables inutiles. Un diagnostic précis, une stratégie claire, des résultats mesurables dès le deuxième mois.</p>
+        <div class="testimonial-attribution">
+          <span class="testimonial-author">Directrice marketing</span>
+          <span class="testimonial-sep">·</span>
+          <span class="testimonial-role">Groupe hôtelier, 4 établissements</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <p class="testimonial-text">Notre note Google est passée de 4,1 à 4,6 en huit mois. Mais surtout, la qualité des avis a changé — les clients décrivent exactement l'expérience que nous voulons incarner.</p>
+        <div class="testimonial-attribution">
+          <span class="testimonial-author">Chef propriétaire</span>
+          <span class="testimonial-sep">·</span>
+          <span class="testimonial-role">Bistrot d'exception, Lyon</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RÉSULTATS — métriques de performance
+       Modifier les valeurs dans .result-val et labels dans .result-label
+       ============================================================ -->
+  <section class="results">
+    <div class="results-header">
+      <div class="split-label">Performance mesurée</div>
+      <h2 class="results-title">Résultats</h2>
+    </div>
+    <div class="results-grid">
+      <div class="result-item">
+        <div class="result-val">+70%</div>
+        <div class="result-label">Visibilité dans les IA génératives</div>
+      </div>
+      <div class="result-item">
+        <div class="result-val">+45%</div>
+        <div class="result-label">Citations dans ChatGPT / Perplexity</div>
+      </div>
+      <div class="result-item">
+        <div class="result-val">+30%</div>
+        <div class="result-label">Trafic organique qualifié</div>
+      </div>
+      <div class="result-item">
+        <div class="result-val">+1<span class="result-star">★</span></div>
+        <div class="result-label">Évolution note Google moyenne en 1 an</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PHILOSOPHY — citations centrées
+       Modifier le texte des <blockquote>
+       ============================================================ -->
+  <section class="philosophy">
+    <blockquote>
+      Nous ne vendons pas du digital. Nous analysons la manière dont vos futurs clients vous identifient <span class="hl">et structurons votre présence pour que leur décision s'oriente naturellement vers vous.</span>
+    </blockquote>
+    <p class="philosophy-sub">Nous accompagnons des restaurants étoilés, des palaces, des bistrots d'exception et des maisons de chef — des établissements qui partagent tous le même niveau d'exigence.</p>
+  </section>
+
+  <!-- ============================================================
+       TIMING — fenêtre d'opportunité
+       3 blocs : urgence marché / offre pré-audit / sélectivité
+       ============================================================ -->
+  <section class="timing">
+    <div class="timing-header">
+      <div class="split-label">Le moment d'agir</div>
+      <h2 class="timing-title">Timing</h2>
+    </div>
+    <div class="timing-grid">
+
+      <div class="timing-block">
+        <div class="timing-block-num">I</div>
+        <h3 class="timing-block-name">Fenêtre critique</h3>
+        <ul class="timing-list">
+          <li>2025–2026 marque le basculement définitif vers l'économie de la recommandation générative.</li>
+          <li>Les premiers positionnés captent 80% du trafic IA.</li>
+          <li>Dans 6 mois, vos concurrents auront consolidé leur avance.</li>
+        </ul>
+      </div>
+
+      <div class="timing-block timing-block--featured">
+        <div class="timing-block-num">II</div>
+        <h3 class="timing-block-name">Pré-audit offert</h3>
+        <ul class="timing-list">
+          <li>Découvrez votre position réelle dans les intelligences artificielles.</li>
+          <li>Analyse comparative de trois concurrents directs.</li>
+          <li>Trente minutes par visioconférence.</li>
+          <li>Sans engagement commercial.</li>
+        </ul>
+        <a href="mailto:admin@stratoshospitality.com" class="timing-cta">Réserver mon diagnostic</a>
+      </div>
+
+      <div class="timing-block">
+        <div class="timing-block-num">III</div>
+        <h3 class="timing-block-name">Places limitées</h3>
+        <ul class="timing-list">
+          <li>Accompagnement personnalisé et suivi individuel.</li>
+          <li>Nous refusons les concurrents directs de nos clients.</li>
+          <li>Sélection des maisons d'exception uniquement.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ — questions fréquentes
+       Accordion : cliquer sur la question pour afficher la réponse
+       ============================================================ -->
+  <section class="faq">
+    <div class="faq-header">
+      <div class="split-label">Précisions</div>
+      <h2 class="faq-title">Questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Pourquoi Stratos plutôt qu'une agence traditionnelle&nbsp;?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Nous ne sommes pas une agence digitale classique.</p>
+          <p>Nous sommes exclusivement spécialisés sur l'hospitalité premium et l'optimisation pour les intelligences artificielles génératives. C'est notre unique domaine d'expertise.</p>
+          <p>Nous le pratiquons quotidiennement depuis les premiers déploiements commerciaux des différentes IA.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Quel délai avant les premiers résultats&nbsp;?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p><strong>Semaines 1–2</strong> — Installation et optimisations techniques initiales.</p>
+          <p><strong>Semaines 3–8</strong> — Indexation progressive par les moteurs IA.</p>
+          <p><strong>Semaines 9–12</strong> — Résultats mesurables : positions, citations, trafic.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Est-ce compatible avec ma présence actuelle&nbsp;?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Parfaitement complémentaire.</p>
+          <p>L'optimisation GEO renforce votre visibilité dans les IA génératives. L'optimisation SEO classique maintient votre visibilité Google. Les deux créent un effet multiplicateur.</p>
+          <p>Votre investissement digital existant est valorisé et amplifié — non remplacé.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA — appel à l'action final
+       Modifier le titre et le texte d'offre
+       ============================================================ -->
+  <section class="cta">
+    <h2>Chaque établissement d'exception<br> mérite une visibilité <em>à la hauteur de ses ambitions.</em></h2>
+    <div class="offer">Premier diagnostic offert</div>
+    <a href="mailto:admin@stratoshospitality.com" class="cta-btn">Échangeons</a>
+    <div class="cta-logo">
+      <img src="assets/images/Logo-Stratos-Blanc.png" alt="Stratos">
+      <p>Stratos Hospitality</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div>Stratos Hospitality — 2026</div>
+    <a href="mailto:admin@stratoshospitality.com">admin@stratoshospitality.com</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
