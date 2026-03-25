@@ -1878,6 +1878,102 @@ footer a:hover {
 /* ============================================================
    RESPONSIVE — 480px
    ============================================================ */
+/* ============================================================
+   RESPONSIVE — nouvelles sections 768px
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Why Now */
+  .why-now-section .container,
+  .timing-section .container {
+    padding: 0 20px;
+  }
+
+  .why-now-section {
+    padding: 80px 0;
+  }
+
+  .timeline-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-box {
+    padding: 28px 24px;
+  }
+
+  /* Timing */
+  .timing-section {
+    padding: 80px 0;
+  }
+
+  .timing-hero h2 {
+    font-size: clamp(22px, 6vw, 36px);
+  }
+
+  .market-timeline {
+    flex-direction: column;
+  }
+
+  .timeline-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(233, 188, 102, 0.08);
+  }
+
+  .timeline-item:last-child {
+    border-bottom: none;
+  }
+
+  .scenarios-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .timing-proof-section h3 {
+    font-size: clamp(20px, 5vw, 28px);
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timing-cta h3 {
+    font-size: clamp(18px, 5vw, 28px);
+  }
+
+  /* Results */
+  .results {
+    padding: 40px 20px;
+  }
+
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .result-label {
+    white-space: normal;
+    font-size: 11px;
+  }
+
+  /* Team */
+  .team-section {
+    padding: 80px 20px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+
+  .team-expertise {
+    flex-wrap: wrap;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: 80px 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-line {
     font-size: clamp(30px, 9vw, 48px);
@@ -1889,5 +1985,30 @@ footer a:hover {
 
   .pillar {
     min-width: 260px;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timing-hero {
+    margin-bottom: 40px;
+  }
+
+  .scenario-card {
+    padding: 32px 20px;
+  }
+
+  .proof-card {
+    padding: 28px 20px;
+  }
+
+  .team-card {
+    padding: 32px 20px;
+  }
+
+  .btn-primary-large {
+    padding: 16px 28px;
+    font-size: 11px;
   }
 }
