@@ -79,6 +79,7 @@ nav.compact {
 
 nav .logo {
   height: 28px;
+  width: auto;
 }
 
 nav a.nav-link {
@@ -114,7 +115,7 @@ nav a.nav-link:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px 48px 80px;
+  padding: 180px 48px 80px;
   position: relative;
 }
 
@@ -681,6 +682,143 @@ nav a.nav-link:hover::after {
 }
 
 /* ============================================================
+   ÉQUIPE
+   ============================================================ */
+.team-section {
+  padding: 140px 48px;
+  background: var(--bg2);
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(233, 188, 102, 0.06);
+}
+
+.team-header {
+  margin-bottom: 72px;
+  max-width: 700px;
+}
+
+.team-title {
+  font-family: var(--serif);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 300;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.team-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.team-subtitle {
+  font-size: 15px;
+  color: var(--dim);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(233, 188, 102, 0.04);
+}
+
+.team-card {
+  background: var(--bg2);
+  padding: 56px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: background 0.4s;
+}
+
+.team-card:hover {
+  background: var(--bg3);
+}
+
+.team-role {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.team-name {
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.team-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.team-experience p {
+  font-size: 13px;
+  color: var(--dim);
+  font-weight: 300;
+  line-height: 1.55;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+  display: flex;
+  gap: 12px;
+}
+
+.team-experience p::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: var(--gold);
+  margin-top: 7px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.team-experience p strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.team-expertise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.team-tag {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  padding: 5px 9px;
+  border: 1px solid rgba(233, 188, 102, 0.15);
+  background: rgba(233, 188, 102, 0.04);
+  white-space: nowrap;
+}
+
+.team-footer {
+  margin-top: 80px;
+  max-width: 860px;
+}
+
+.team-footer p {
+  font-family: var(--serif);
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--dim);
+}
+
+/* ============================================================
    CTA SECTION
    ============================================================ */
 .cta {
@@ -747,8 +885,9 @@ nav a.nav-link:hover::after {
 }
 
 .cta-logo img {
-  height: 24px;
-  opacity: 0.3;
+  height: 160px;
+  mix-blend-mode: screen;
+  opacity: 0.6;
 }
 
 .cta-logo p {
