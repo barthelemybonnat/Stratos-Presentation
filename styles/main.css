@@ -793,6 +793,16 @@ nav a.nav-link:hover::after {
   overflow: hidden;
 }
 
+.team-bio {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--dim);
+  font-style: italic;
+  border-top: 1px solid rgba(233, 188, 102, 0.1);
+  padding-top: 14px;
+}
+
 .team-tag {
   font-size: 8px;
   font-weight: 500;
