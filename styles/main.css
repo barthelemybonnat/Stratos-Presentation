@@ -1072,6 +1072,12 @@ footer a:hover {
   margin: 0 auto;
 }
 
+.insight-adrien {
+  margin-top: 16px !important;
+  padding-top: 16px;
+  border-top: 1px solid rgba(233, 188, 102, 0.1);
+}
+
 .results {
   padding: 40px 48px;
   background: var(--bg2);
